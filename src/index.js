@@ -5,7 +5,9 @@ function changer(str) {
       sum += 1
       if (str[i] !== str[i - 1]) {
         if (sum % 2 !== 0) {
-          result += str[i - 1]
+            result += str[i - 1]
+        } else if (sum % 2 === 0) {
+            result += str[i - 1].repeat(2)
         }
         sum = 0
       }
